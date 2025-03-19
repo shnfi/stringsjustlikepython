@@ -17,4 +17,6 @@ void err_(char *err_type, char *err_describtion)
     sprintf(msg, "[ERROR] -> %s = %s", err_type, err_describtion);
 
     printf("%s\n", msg);
+
+    exit(1);
 }
