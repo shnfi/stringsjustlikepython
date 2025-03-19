@@ -10,5 +10,6 @@
 
 #include "capitalize.h"
 #include "casefold.h"
+#include "center.h"
 
 #endif
