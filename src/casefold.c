@@ -1,24 +1,15 @@
 #include <stdio.h>
+#include "../include/get_len_.h"
 #include "../include/casefold.h"
 
 const static char SMALL_L[L_COUNT] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 const static char CAPITAL_L[L_COUNT] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
-static inline unsigned int get_len(char *str)
-{
-    unsigned int len = 0;
-
-    for (int i = 0; str[i] != '\0'; i++)
-        len++;
-
-    return len;
-}
-
 char *casefold(char *str)
 {
     char *out = str;
 
-    for (int i = 0; i < get_len(out); i++)
+    for (int i = 0; i < get_len_(out); i++)
     {
         for (int j = 0; j < L_COUNT; j++)
         {
