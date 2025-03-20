@@ -11,5 +11,6 @@
 #include "capitalize.h"
 #include "casefold.h"
 #include "center.h"
+#include "endswith.h"
 
 #endif
