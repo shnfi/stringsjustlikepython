@@ -4,13 +4,9 @@
 #include "../include/get_len_.h"
 #include "../include/casefold.h"
 
-
 /*
- * defining the array of all 26 letters these are static
- * because i defined these arrays in another method too 
- * with the same name.
+ * extern those two arrays from the 'capitalize.c' file.
  */
-
 
 const extern char SMALL_L[L_COUNT];
 const extern char CAPITAL_L[L_COUNT];
