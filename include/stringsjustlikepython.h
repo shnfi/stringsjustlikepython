@@ -12,5 +12,6 @@
 #include "casefold.h"
 #include "center.h"
 #include "endswith.h"
+#include "find.h"
 
 #endif
