@@ -5,9 +5,16 @@
 
 int main()
 {
-    char *str = malloc(strlen("ShNfI") + 1);
-    strcpy(str, "ShNfI");
-    printf("%s\n", casefold(str));
+    printf("%s\n", capitalize("hello"));
+
+    printf("%s\n", casefold("hEllOw"));
+
+    printf("%s\n", center("hello", 10));
+    printf("%s\n", center("abc", 10));
+    printf("%s\n", center("a", 10));
+
+
+    printf("%d\n", endswith("jfjdakl;utnjfdsklajfdlksa;jfdklsad", 's'));
     
     return 0;
 }
