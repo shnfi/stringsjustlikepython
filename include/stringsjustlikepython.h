@@ -14,5 +14,6 @@
 #include "endswith.h"
 #include "find.h"
 #include "isallnum.h"
+#include "isallpha.h"
 
 #endif
