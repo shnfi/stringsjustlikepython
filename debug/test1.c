@@ -15,6 +15,12 @@ int main()
 
 
     printf("%d\n", endswith("jfjdakl;utnjfdsklajfdlksa;jfdklsad", 's'));
+
+    printf("%d\n", find("hello, im shnfi!", 's'));
+
+    printf("%d\n", isallnum("78493"));
+
+    printf("%d\n", isallpha("aajfjkd0"));
     
     return 0;
 }
