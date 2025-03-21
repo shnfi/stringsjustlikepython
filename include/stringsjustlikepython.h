@@ -13,5 +13,6 @@
 #include "center.h"
 #include "endswith.h"
 #include "find.h"
+#include "isallnum.h"
 
 #endif
