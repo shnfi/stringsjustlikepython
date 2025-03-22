@@ -13,7 +13,7 @@
 #include "center.h"
 #include "endswith.h"
 #include "find.h"
-#include "isallnum.h"
+#include "isdecimal.h"
 #include "isallpha.h"
 
 #endif
