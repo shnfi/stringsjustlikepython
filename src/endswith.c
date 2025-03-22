@@ -5,7 +5,7 @@
 int endswith(char *str, char last_char)
 {
     if (str[get_len_(str) - 1] == last_char)
-        return 0;
-    else
         return 1;
+    else
+        return 0;
 }

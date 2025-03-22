@@ -12,12 +12,12 @@ int isdecimal(char *str)
         for (int j = 0; j < L_COUNT; j++)
         {
             if (str[i] == SMALL_L[j])
-                return 1;
+                return 0;
             
             if (str[i] == CAPITAL_L[j])
-                return 1;
+                return 0;
         }
     }
 
-    return 0;
+    return 1;
 }

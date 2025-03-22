@@ -9,7 +9,7 @@ int isallpha(char *str)
     for (int i = 0; i < get_len_(str); i++)
         for (int j = 0; j < 10; j++)
             if (str[i] == (char) NUMS[j])
-                return 1;
+                return 0;
     
-    return 0;
+    return 1;
 }
