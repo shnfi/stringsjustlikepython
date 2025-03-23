@@ -33,7 +33,7 @@ int isidentifier(char *str)
                 qualify = 0;
         }
 
-        if (qualify == 0)
+        if (!qualify)
             return qualify;
     }
 
