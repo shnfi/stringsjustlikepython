@@ -17,5 +17,6 @@
 #include "isallpha.h"
 #include "isidentifier.h"
 #include "isallnum.h"
+#include "islowercase.h"
 
 #endif
