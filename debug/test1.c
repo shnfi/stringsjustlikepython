@@ -32,5 +32,8 @@ int main()
     printf("%d\n", isallnum("abc123")); // expected output: 1
     printf("%d\n", isallnum("ab/c12")); // expected output: 0
     
+    printf("%d\n", islowercase("hello")); // expected output: 1
+    printf("%d\n", islowercase("hEllo")); // expected output: 0
+
     return 0;
 }
