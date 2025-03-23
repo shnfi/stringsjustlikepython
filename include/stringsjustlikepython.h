@@ -15,5 +15,7 @@
 #include "find.h"
 #include "isdecimal.h"
 #include "isallpha.h"
+#include "isidentifier.h"
+#include "isallnum.h"
 
 #endif
