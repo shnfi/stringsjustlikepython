@@ -18,5 +18,8 @@
 #include "isidentifier.h"
 #include "isallnum.h"
 #include "islowercase.h"
+#include "iswhitespace.h"
+#include "istitle.h"
+#include "isuppercase.h"
 
 #endif
