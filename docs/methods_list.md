@@ -10,4 +10,7 @@ isdecimal(char *str) // Returns True if all characters in the string are decimal
 isidentifier(char *str) // Returns True if the string is an identifier
 isallnum(char *str) // Returns True if all characters in the string are alphanumeric
 islowercase(char *str) // Returns True if all characters in the string are lower case
+iswhitespace(char *str) // Returns True if all characters in the string are whitespaces
+istitle(char *str) // Returns True if the string follows the rules of a title
+isupper(char *str) // Returns True if all characters in the string are upper case
 ```
