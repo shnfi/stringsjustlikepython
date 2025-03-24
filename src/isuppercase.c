@@ -21,6 +21,11 @@ int isuppercase(char *str)
                 qualify = 0;
         }
 
+		/* 
+		 * if the "str" was not qualified to continue, 
+		 * return false and end the program.
+		 */
+
         if (!qualify)
             return qualify;
     }

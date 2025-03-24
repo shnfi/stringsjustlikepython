@@ -9,6 +9,12 @@ int isidentifier(char *str)
 {
     int qualify = 1;
 
+	/*
+	 * checking if the first char of the "str" is
+	 * '_', a small letter or even a capital letter.
+	 * if it was one of these 3, its qualified.
+	 */
+
     for (int i = 0; i < L_COUNT; i++)
     {
         if (str[0] != SMALL_L[i] && str[0] != CAPITAL_L[i] && str[0] != '_')
@@ -19,6 +25,10 @@ int isidentifier(char *str)
             break;
         }
     }
+
+	/*
+	 * checking the other chars of the "str".
+	 */
 
     for (int i = 0; i < get_len_(str); i++)
     {
@@ -32,6 +42,11 @@ int isidentifier(char *str)
             else
                 qualify = 0;
         }
+
+		/*
+		 * if the "str" is not qualified to continue,
+		 * return false and end the program.
+		 */
 
         if (!qualify)
             return qualify;

@@ -20,6 +20,11 @@ int istitle(char *str)
             qualify = 0;
     }
 
+	/*
+	 * if the "str" variable was to qualified to continue,
+	 * return false and end the program.
+	 */
+
     if (!qualify)
         return 1;
 

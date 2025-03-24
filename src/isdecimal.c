@@ -11,6 +11,10 @@ int isdecimal(char *str)
     {
         for (int j = 0; j < L_COUNT; j++)
         {
+			/*
+			 * return false if you got a letter, either capital or small
+			 */
+
             if (str[i] == SMALL_L[j])
                 return 0;
             
