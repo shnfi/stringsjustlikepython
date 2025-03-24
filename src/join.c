@@ -1,10 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <signal.h>
 #include "../include/get_len_.h"
+#include "../include/err_.h"
 #include "../include/join.h"
+
+static inline void sigsegv_handle()
+{
+    err_("Memory", "We got a segmentation fault!");
+}
 
 char *join(char *arr[], unsigned int len, char sep)
 {
+    /*
+     * a signal receiver for handling segmentation fault error (SIGSEGV).
+     */
+
+    signal(SIGSEGV, sigsegv_handle);
+
     /*
      * the buff_size variable is for getting the byte count that 
      * we should allocate memory for the out variable.
