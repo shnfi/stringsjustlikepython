@@ -14,7 +14,7 @@ char *center(char *str, unsigned int width)
      */
 
     if (get_len_(str) > width)
-        err_("syntax", "center(char *str, unsigned int width) the length of str should not be more than width!");
+        err_("Syntax", "The length of given str must be less or equal to the given width!");
 
     unsigned int corner_spaces = width - get_len_(str); // finding out how many spaces should be in the right and left of the str.
     unsigned int single_side_spaces = corner_spaces / 2; // finding out how many spaces should be in each side of the str.
