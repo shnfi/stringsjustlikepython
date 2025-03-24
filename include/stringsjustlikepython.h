@@ -9,7 +9,7 @@
 #define STRINGSJUSTLIKEPYTHON_H
 
 #include "capitalize.h"
-#include "casefold.h"
+#include "lower.h"
 #include "center.h"
 #include "endswith.h"
 #include "find.h"
@@ -21,5 +21,7 @@
 #include "iswhitespace.h"
 #include "istitle.h"
 #include "isuppercase.h"
+#include "join.h"
+#include "upper.h"
 
 #endif
