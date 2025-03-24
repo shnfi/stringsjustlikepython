@@ -7,7 +7,7 @@ int main()
 {
     printf("%s\n", capitalize("hello"));
 
-    printf("%s\n", casefold("hEllOw"));
+    printf("%s\n", lower("hEllOw"));
 
     printf("%s\n", center("hello", 10));
     printf("%s\n", center("abc", 10));
@@ -32,8 +32,8 @@ int main()
     printf("%d\n", isallnum("abc123")); // expected output: 1
     printf("%d\n", isallnum("ab/c12")); // expected output: 0
     
-    printf("* %d\n", islowercase("hello")); // expected output: 1
-    printf("* %d\n", islowercase("hEllo")); // expected output: 0
+    printf("%d\n", islowercase("hello")); // expected output: 1
+    printf("%d\n", islowercase("hEllo")); // expected output: 0
 
     printf("%d\n", iswhitespace("abc")); // expected output: 0
     printf("%d\n", iswhitespace("   ")); // expected output: 1
@@ -42,9 +42,14 @@ int main()
     printf("%d\n", istitle("TiTle")); // expected output: 0
     printf("%d\n", istitle("title")); // expected output: 0
 
-    printf("* %d\n", isuppercase("HELLO")); // expected output: 1
-    printf("* %d\n", isuppercase("Hello")); // expected output: 0
-    printf("* %d\n", isuppercase("heLlo")); // expected output: 0
+    printf("%d\n", isuppercase("HELLO")); // expected output: 1
+    printf("%d\n", isuppercase("Hello")); // expected output: 0
+    printf("%d\n", isuppercase("heLlo")); // expected output: 0
+
+    char *arr[] = {"A", "AB", "ABC"};
+    printf("%s\n", join(arr, sizeof(arr) / sizeof(arr[0]), '_')); // expected output: A_B_C
+
+    printf("%s\n", lower("HeLLoW")); // expected output: hellow
 
     return 0;
 }
