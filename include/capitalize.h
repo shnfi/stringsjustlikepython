@@ -3,6 +3,6 @@
 
 #define L_COUNT 26
 
-char *capitalize(char *str);
+char *capitalize(const char *str);
 
 #endif

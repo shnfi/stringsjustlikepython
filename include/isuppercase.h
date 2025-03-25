@@ -3,6 +3,6 @@
 
 #define L_COUNT 26
 
-int isuppercase(char *str);
+int isuppercase(const char *str);
 
 #endif

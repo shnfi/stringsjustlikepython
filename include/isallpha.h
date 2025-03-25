@@ -1,6 +1,6 @@
 #ifndef ISALLPHA_H
 #define ISALLPHA_H
 
-int isallpha(char *str);
+int isallpha(const char *str);
 
 #endif

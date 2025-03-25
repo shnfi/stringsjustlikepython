@@ -4,7 +4,7 @@
 
 extern const char SMALL_L[L_COUNT];
 
-int islowercase(char *str)
+int islowercase(const char *str)
 {
     int qualify;
 

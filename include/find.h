@@ -1,6 +1,6 @@
 #ifndef FIND_H
 #define FIND_H
 
-int find(char *str, char char_);
+int find(const char *str, const char char_);
 
 #endif

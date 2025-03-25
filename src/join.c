@@ -10,7 +10,7 @@ static inline void sigsegv_handle()
     err_("Memory", "We got a segmentation fault!");
 }
 
-char *join(char *arr[], unsigned int len, char sep)
+char *join(const char *arr[], const unsigned int len, const char sep)
 {
     /*
      * a signal receiver for handling segmentation fault error (SIGSEGV).

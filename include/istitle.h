@@ -3,6 +3,6 @@
 
 #define L_COUNT 26
 
-int istitle(char *str);
+int istitle(const char *str);
 
 #endif

@@ -4,7 +4,7 @@
 
 extern const char CAPITAL_L[L_COUNT];
 
-int isuppercase(char *str)
+int isuppercase(const char *str)
 {
     int qualify;
 

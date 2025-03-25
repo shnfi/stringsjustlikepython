@@ -3,6 +3,6 @@
 
 #define L_COUNT 26
 
-int islowercase(char *str);
+int islowercase(const char *str);
 
 #endif

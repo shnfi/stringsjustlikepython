@@ -3,6 +3,6 @@
 
 #define L_COUNT 26
 
-char *lower(char *str);
+char *lower(const char *str);
 
 #endif

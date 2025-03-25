@@ -3,6 +3,6 @@
 
 #define L_COUNT 26
 
-int isdecimal(char *str);
+int isdecimal(const char *str);
 
 #endif

@@ -11,7 +11,7 @@
 const extern char SMALL_L[L_COUNT];
 const extern char CAPITAL_L[L_COUNT];
 
-char *lower(char *str)
+char *lower(const char *str)
 {
     char *out = malloc(get_len_(str));
     strcpy(out, str);

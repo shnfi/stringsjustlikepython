@@ -5,7 +5,7 @@
 extern const char SMALL_L[L_COUNT];
 extern const char CAPITAL_L[L_COUNT];
 
-int isidentifier(char *str)
+int isidentifier(const char *str)
 {
     int qualify = 1;
 

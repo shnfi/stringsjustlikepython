@@ -20,7 +20,7 @@ static inline int check_num(char char_)
     return 0;
 }
 
-int isallnum(char *str)
+int isallnum(const char *str)
 {
     int qualify;
 

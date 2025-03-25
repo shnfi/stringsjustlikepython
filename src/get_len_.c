@@ -1,6 +1,6 @@
 #include "../include/get_len_.h"
 
-unsigned int get_len_(char *str)
+unsigned int get_len_(const char *str)
 {
     unsigned int len = 0;
 

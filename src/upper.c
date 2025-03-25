@@ -11,13 +11,13 @@
 const extern char SMALL_L[L_COUNT];
 const extern char CAPITAL_L[L_COUNT];
 
-char *upper(char *str)
+char *upper(const char *str)
 {
     char *out = malloc(get_len_(str));
     strcpy(out, str);
 
     /*
-     * navigating the whole str and searching for a capital
+     * navigating the whole str and searching for a small
      * letter.
      */
 
@@ -27,7 +27,7 @@ char *upper(char *str)
         {
             /*
              * if each character was capital, immediatly set it to the
-             * small version of that letter.
+             * capital version of that letter.
              */
 
             if (out[i] == SMALL_L[j])

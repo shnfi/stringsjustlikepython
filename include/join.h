@@ -1,6 +1,6 @@
 #ifndef JOIN_H
 #define JOIN_H
 
-char *join(char *arr[], unsigned int len, char sep);
+char *join(const char *arr[], const unsigned int len, const char sep);
 
 #endif
