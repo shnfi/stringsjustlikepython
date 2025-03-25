@@ -1,3 +1,5 @@
 <h1 align='center'>Change log started from 25/3/25</h1>
-<span style='color:green;'>[1] - modified all of the methods and made they're arguments more compatible</span>
-<span style='color:green;'>[2] - updated mehods list</span>
+<p>[1] [MODIFICATION] - modified all of the methods and made they're arguments more compatible</p>
+<p>[2] [MODIFICATION] - update methods list</p>
+<p>[3] [BUG_FIXED] - removed the colors feature from the 'log.sh'</p>
+<p>[4] [NEW_FEATURE] - added the 'log_type' for the 'log.sh'</p>
