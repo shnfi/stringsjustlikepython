@@ -23,5 +23,7 @@
 #include "isuppercase.h"
 #include "join.h"
 #include "upper.h"
+#include "ljust.h"
+#include "rjust.h"
 
 #endif
