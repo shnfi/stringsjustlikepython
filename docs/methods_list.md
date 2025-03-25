@@ -15,4 +15,6 @@ istitle(const char *str) // Returns True if the string follows the rules of a ti
 isupper(const char *str) // Returns True if all characters in the string are upper case
 join(const char *arr[], const unsigned int len, const char sep) // Converts the elements of an iterable into a string
 upper(const char *str) // Converts a string into upper case
+ljust(const char *str, const unsigned int width) // Returns a left justified version of the string
+rjust(const char *str, const unsigned int width) // Returns a right justified version of the string
 ```
