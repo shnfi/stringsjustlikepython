@@ -1,0 +1,3 @@
+# this is the change log, created in 25/3/25 #
+[1] - modified all of the methods and made they're arguments more compatible
+[2] - updated mehods list
