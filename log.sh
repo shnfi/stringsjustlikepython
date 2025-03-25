@@ -1,11 +1,7 @@
 #!/bin/bash
 
-new_log=$(echo $1)
-log_color=$(echo $2)
-log_num=$(cat CHANGELOG | wc -l)
+log_type=$(echo $1)
+new_log=$(echo $2)
+log_num=$(cat CHANGELOG.md | wc -l)
 
-if [[ $log_color -eq "green" || $log_color -eq "red" ]]; then
-	echo "<span style='color:$log_color;'>[$log_num] - $new_log</span>" >> CHANGELOG
-else
-	echo "<span>[$log_num] - $new_log</span>" >> CHANGELOG
-fi
+echo "<p>[$log_num] [$log_type] - $new_log</p>" >> CHANGELOG.md
