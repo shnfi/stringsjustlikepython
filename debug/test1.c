@@ -47,7 +47,7 @@ int main()
     printf("%d\n", isuppercase("heLlo")); // expected output: 0
 
     char *arr[] = {"A", "AB", "ABC"};
-    printf("%s\n", join(arr, sizeof(arr) / sizeof(arr[0]), '_')); // expected output: A_B_C
+    printf("%s\n", join((const char **) arr, sizeof(arr) / sizeof(arr[0]), '_')); // expected output: A_B_C
 
     printf("%s\n", lower("HeLLoW")); // expected output: hellow
 
