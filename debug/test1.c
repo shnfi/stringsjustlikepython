@@ -51,5 +51,9 @@ int main()
 
     printf("%s\n", lower("HeLLoW")); // expected output: hellow
 
+    printf("%s is cool!\n", ljust("banana", 10)); // expected output: banana     is cool!
+
+    printf("%s is cool!\n", rjust("banana", 10)); // expected output:       banana is cool!
+
     return 0;
 }
