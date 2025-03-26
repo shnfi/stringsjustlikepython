@@ -1,6 +1,7 @@
 # all python string methods that now we got in stringsjustlikepython ?
 ```c
 capitalize(const char *str) // Converts the first character to upper case
+length(const char *str) // Returns the length of the stirng
 lower(const char *str) // Converts string into lower case
 center(const char *str, const unsigned int width) // Returns a centered string
 endswith(const char *str, const char last_char) // Returns true if the string ends with the specified value
