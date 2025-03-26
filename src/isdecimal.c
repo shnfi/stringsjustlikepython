@@ -5,12 +5,9 @@
 extern const char SMALL_L[L_COUNT];
 extern const char CAPITAL_L[L_COUNT];
 
-int isdecimal(const char *str)
-{
-    for (int i = 0; i < length(str); i++)
-    {
-        for (int j = 0; j < L_COUNT; j++)
-        {
+int isdecimal(const char *str) {
+    for (int i = 0; i < length(str); i++) {
+        for (int j = 0; j < L_COUNT; j++) {
 			/*
 			 * return false if you got a letter, either capital or small
 			 */

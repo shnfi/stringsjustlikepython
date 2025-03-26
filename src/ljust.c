@@ -4,8 +4,7 @@
 #include "../include/length.h"
 #include "../include/ljust.h"
 
-char *ljust(const char *str, const unsigned int width)
-{
+char *ljust(const char *str, const unsigned int width) {
     char *out = malloc(width);
 
     /*
@@ -22,8 +21,7 @@ char *ljust(const char *str, const unsigned int width)
      * the length of the str, if not, just append white space.
      */
 
-    for (int i = 0; i < width; i++)
-    {
+    for (int i = 0; i < width; i++) {
         if (i < length(str))
             out[i] = str[i];
         else

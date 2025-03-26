@@ -11,8 +11,7 @@
 const extern char SMALL_L[L_COUNT];
 const extern char CAPITAL_L[L_COUNT];
 
-char *lower(const char *str)
-{
+char *lower(const char *str) {
     char *out = malloc(length(str));
     strcpy(out, str);
 
@@ -21,17 +20,14 @@ char *lower(const char *str)
      * letter.
      */
 
-    for (int i = 0; i < length(out); i++)
-    {
-        for (int j = 0; j < L_COUNT; j++)
-        {
+    for (int i = 0; i < length(out); i++) {
+        for (int j = 0; j < L_COUNT; j++) {
             /*
              * if each character was capital, immediatly set it to the
              * small version of that letter.
              */
 
-            if (out[i] == CAPITAL_L[j])
-            {
+            if (out[i] == CAPITAL_L[j]) {
                 out[i] = SMALL_L[j];
                 break;
             }

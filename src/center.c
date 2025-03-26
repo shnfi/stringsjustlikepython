@@ -4,8 +4,7 @@
 #include "../include/length.h"
 #include "../include/center.h"
 
-char *center(const char *str, const unsigned int width)
-{
+char *center(const char *str, const unsigned int width) {
     char *out = malloc(width);
 
     /*

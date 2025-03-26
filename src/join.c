@@ -5,13 +5,11 @@
 #include "../include/helper_func/err_.h"
 #include "../include/join.h"
 
-static inline void sigsegv_handle()
-{
+static inline void sigsegv_handle() {
     err_("Memory", "We got a segmentation fault!");
 }
 
-char *join(const char *arr[], const unsigned int len, const char sep)
-{
+char *join(const char *arr[], const unsigned int len, const char sep) {
     /*
      * a signal receiver for handling segmentation fault error (SIGSEGV).
      */
@@ -41,10 +39,8 @@ char *join(const char *arr[], const unsigned int len, const char sep)
      * the separator.
      */
 
-    for (int i = 0; i < len; i++)
-    {
-        for (int j = 0; j < length(arr[i]); j++)
-        {
+    for (int i = 0; i < len; i++) {
+        for (int j = 0; j < length(arr[i]); j++) {
             out[length(out)] = arr[i][j];
         }
 

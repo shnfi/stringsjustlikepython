@@ -11,8 +11,7 @@ extern const char NUMS[10];
  * a function to check for a char if its a number.
  */
 
-static inline int check_num(char char_)
-{
+static inline int check_num(char char_) {
     for (int i = 0; i < 10; i++)
         if (char_ == NUMS[i])
             return 1;
@@ -20,21 +19,17 @@ static inline int check_num(char char_)
     return 0;
 }
 
-int isallnum(const char *str)
-{
+int isallnum(const char *str) {
     int qualify;
 
-    for (int i = 0; i < length(str); i++)
-    {
-        for (int j = 0; j < L_COUNT; j++)
-        {
+    for (int i = 0; i < length(str); i++) {
+        for (int j = 0; j < L_COUNT; j++) {
 			/*
 			 * its number, a small letter or even a capital letter,
 			 * if it was one of these 3, its qualified.
 			 */
 
-            if (str[i] == SMALL_L[j] || str[i] == CAPITAL_L[j] || check_num(str[i]))
-            {
+            if (str[i] == SMALL_L[j] || str[i] == CAPITAL_L[j] || check_num(str[i])) {
                 qualify = 1;
                 break;
             }

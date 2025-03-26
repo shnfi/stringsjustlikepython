@@ -4,8 +4,7 @@
 #include "../include/length.h"
 #include "../include/rjust.h"
 
-char *rjust(const char *str, const unsigned int width)
-{
+char *rjust(const char *str, const unsigned int width) {
     char *out = malloc(width);
 
     /*
@@ -24,10 +23,8 @@ char *rjust(const char *str, const unsigned int width)
     
     int j = 0;
 
-    for (int i = 0; i < width; i++)
-    {
-        if (i >= width - length(str))
-        {
+    for (int i = 0; i < width; i++) {
+        if (i >= width - length(str)) {
             out[i] = str[j];
             j++;
         }

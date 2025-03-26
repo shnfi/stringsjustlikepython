@@ -4,16 +4,12 @@
 
 extern const char SMALL_L[L_COUNT];
 
-int islowercase(const char *str)
-{
+int islowercase(const char *str) {
     int qualify;
 
-    for (int i = 0; i < length(str); i++)
-    {
-        for (int j = 0; j < L_COUNT; j++)
-        {
-            if (str[i] == SMALL_L[j])
-            {
+    for (int i = 0; i < length(str); i++) {
+        for (int j = 0; j < L_COUNT; j++) {
+            if (str[i] == SMALL_L[j]) {
                 qualify = 1;
                 break;
             }
