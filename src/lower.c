@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../include/get_len_.h"
+#include "../include/length.h"
 #include "../include/lower.h"
 
 /*
@@ -13,7 +13,7 @@ const extern char CAPITAL_L[L_COUNT];
 
 char *lower(const char *str)
 {
-    char *out = malloc(get_len_(str));
+    char *out = malloc(length(str));
     strcpy(out, str);
 
     /*
@@ -21,7 +21,7 @@ char *lower(const char *str)
      * letter.
      */
 
-    for (int i = 0; i < get_len_(out); i++)
+    for (int i = 0; i < length(out); i++)
     {
         for (int j = 0; j < L_COUNT; j++)
         {

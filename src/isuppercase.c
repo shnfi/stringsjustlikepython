@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../include/get_len_.h"
+#include "../include/length.h"
 #include "../include/isuppercase.h"
 
 extern const char CAPITAL_L[L_COUNT];
@@ -8,7 +8,7 @@ int isuppercase(const char *str)
 {
     int qualify;
 
-    for (int i = 0; i < get_len_(str); i++)
+    for (int i = 0; i < length(str); i++)
     {
         for (int j = 0; j < L_COUNT; j++)
         {

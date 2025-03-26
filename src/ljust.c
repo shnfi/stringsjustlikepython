@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/err_.h"
-#include "../include/get_len_.h"
+#include "../include/helper_func/err_.h"
+#include "../include/length.h"
 #include "../include/ljust.h"
 
 char *ljust(const char *str, const unsigned int width)
@@ -13,7 +13,7 @@ char *ljust(const char *str, const unsigned int width)
      * just show an error using the err_() function.
      */
 
-    if (get_len_(str) > width)
+    if (length(str) > width)
         err_("Syntax", "The length of given str must be less or equal to the given width!");
 
     /*
@@ -24,7 +24,7 @@ char *ljust(const char *str, const unsigned int width)
 
     for (int i = 0; i < width; i++)
     {
-        if (i < get_len_(str))
+        if (i < length(str))
             out[i] = str[i];
         else
             out[i] = ' ';

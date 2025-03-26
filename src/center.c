@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/err_.h"
-#include "../include/get_len_.h"
+#include "../include/helper_func/err_.h"
+#include "../include/length.h"
 #include "../include/center.h"
 
 char *center(const char *str, const unsigned int width)
@@ -13,10 +13,10 @@ char *center(const char *str, const unsigned int width)
      * just show an error using the err_() function.
      */
 
-    if (get_len_(str) > width)
+    if (length(str) > width)
         err_("Syntax", "The length of given str must be less or equal to the given width!");
 
-    unsigned int corner_spaces = width - get_len_(str); // finding out how many spaces should be in the right and left of the str.
+    unsigned int corner_spaces = width - length(str); // finding out how many spaces should be in the right and left of the str.
     unsigned int single_side_spaces = corner_spaces / 2; // finding out how many spaces should be in each side of the str.
 
     /*
@@ -31,7 +31,7 @@ char *center(const char *str, const unsigned int width)
      * start to write each letter of the str.
      */
 
-    for (int i = get_len_(out), j = 0; i < get_len_(str), j < get_len_(str); i++, j++)
+    for (int i = length(out), j = 0; i < length(str), j < length(str); i++, j++)
         out[i] = str[j];
 
     return out;

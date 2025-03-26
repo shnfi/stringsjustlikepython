@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../include/get_len_.h"
+#include "../include/length.h"
 #include "../include/isallnum.h"
 
 extern const char SMALL_L[L_COUNT];
@@ -24,7 +24,7 @@ int isallnum(const char *str)
 {
     int qualify;
 
-    for (int i = 0; i < get_len_(str); i++)
+    for (int i = 0; i < length(str); i++)
     {
         for (int j = 0; j < L_COUNT; j++)
         {

@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "../include/get_len_.h"
+#include "../include/length.h"
 #include "../include/capitalize.h"
 
 const char SMALL_L[L_COUNT] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
@@ -9,7 +9,7 @@ const char CAPITAL_L[L_COUNT] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J
 
 char *capitalize(const char *str)
 {
-    char *out = malloc(get_len_(str));
+    char *out = malloc(length(str));
     strcpy(out, str);
     unsigned int _index;
 

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../include/get_len_.h"
+#include "../include/length.h"
 #include "../include/isidentifier.h"
 
 extern const char SMALL_L[L_COUNT];
@@ -30,7 +30,7 @@ int isidentifier(const char *str)
 	 * checking the other chars of the "str".
 	 */
 
-    for (int i = 0; i < get_len_(str); i++)
+    for (int i = 0; i < length(str); i++)
     {
         for (int j = 0; j < L_COUNT; j++)
         {

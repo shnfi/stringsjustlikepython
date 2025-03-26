@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
-#include "../include/get_len_.h"
-#include "../include/err_.h"
+#include "../include/length.h"
+#include "../include/helper_func/err_.h"
 #include "../include/join.h"
 
 static inline void sigsegv_handle()
@@ -30,7 +30,7 @@ char *join(const char *arr[], const unsigned int len, const char sep)
     int buff_size = len - 1;
 
     for (int i = 0; i < len; i++)
-        for (int j = 0; j < get_len_(arr[i]); j++)
+        for (int j = 0; j < length(arr[i]); j++)
             buff_size++;
 
     char *out = malloc(buff_size);
@@ -43,9 +43,9 @@ char *join(const char *arr[], const unsigned int len, const char sep)
 
     for (int i = 0; i < len; i++)
     {
-        for (int j = 0; j < get_len_(arr[i]); j++)
+        for (int j = 0; j < length(arr[i]); j++)
         {
-            out[get_len_(out)] = arr[i][j];
+            out[length(out)] = arr[i][j];
         }
 
         /*
@@ -53,7 +53,7 @@ char *join(const char *arr[], const unsigned int len, const char sep)
          */
 
         if (i != len - 1)
-            out[get_len_(out)] = sep;
+            out[length(out)] = sep;
     }
 
     return out;
