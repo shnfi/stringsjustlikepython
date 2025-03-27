@@ -9,6 +9,7 @@
 #define STRINGSJUSTLIKEPYTHON_H
 
 #include "capitalize.h"
+#include "length.h"
 #include "lower.h"
 #include "center.h"
 #include "endswith.h"
