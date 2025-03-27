@@ -26,5 +26,6 @@
 #include "ljust.h"
 #include "rjust.h"
 #include "split.h"
+#include "startswith.h"
 
 #endif
