@@ -14,7 +14,8 @@ int main()
     printf("%s\n", center("a", 10));
 
 
-    printf("%d\n", endswith("jfjdakl;utnjfdsklajfdlksa;jfdklsad", 's'));
+    printf("%d\n", endswith("hello, i really love apples", 's')); // expected output: 1
+    printf("%d\n", endswith("hello, i really love apple", 's')); // expected output: 0
 
     printf("%d\n", find("hello, im shnfi!", 's'));
 
@@ -54,6 +55,15 @@ int main()
     printf("%s is cool!\n", ljust("banana", 10)); // expected output: banana     is cool!
 
     printf("%s is cool!\n", rjust("banana", 10)); // expected output:       banana is cool!
+
+    int size = 0;
+    char **arr2 = split("hello world im shnfi", (unsigned int *) &size);
+    for (int i = 0; i < size; i++)
+        printf("%s, ", arr2[i]); // expected output: hello, world, im shnfi,
+    printf("\n");
+
+    printf("%d\n", startswith("jake really have to go!", 'j')); // expected output: 1
+    printf("%d\n", startswith("alex really have to go!", 'j')); // expected output: 0
 
     return 0;
 }
