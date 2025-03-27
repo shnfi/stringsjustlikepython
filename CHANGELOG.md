@@ -15,3 +15,5 @@
 <p>[14] [UPDATE] - update method list</p>
 <p>[15] [NEW_FEATURE] - startswith() method added to the lib</p>
 <p>[16] [UPDATE] - update mehods list</p>
+<p>[17] [BUG_FIXED] - fixed a bug related to the lib inclusion of the 'introcude_yourself.c' example program</p>
+<p>[18] [NEW_EXAMPLE] - wrote a new example program</p>
