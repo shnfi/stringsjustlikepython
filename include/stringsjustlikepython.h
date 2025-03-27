@@ -25,5 +25,6 @@
 #include "upper.h"
 #include "ljust.h"
 #include "rjust.h"
+#include "split.h"
 
 #endif
