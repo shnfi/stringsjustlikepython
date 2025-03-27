@@ -11,3 +11,7 @@
 <p>[10] [MODIFICATION] - moved all bash scripts to a new directory called 'scripts'</p>
 <p>[11] [NEW_FEATURE] - turned the 'get_len_()' helper functino to the 'length()' method, a METHOD!</p>
 <p>[12] [UPDATE] - update methods list</p>
+<p>[13] [NEW_FEATURE] - split() method added to the lib</p>
+<p>[14] [UPDATE] - update method list</p>
+<p>[15] [NEW_FEATURE] - startswith() method added to the lib</p>
+<p>[16] [UPDATE] - update mehods list</p>
