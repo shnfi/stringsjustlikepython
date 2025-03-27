@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../../include/stringsjustlikepython.h"
+#include "../include/stringsjustlikepython.h"
 
-int main(void)
-{
+int main(void) {
 	char *name = malloc(20);
 	char *last_name = malloc(20);
 	char *phone_num = malloc(11);
