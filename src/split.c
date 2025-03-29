@@ -3,7 +3,7 @@
 #include "../include/length.h"
 #include "../include/split.h"
 
-char **split(const char *str, unsigned int *s) {
+char **split(const char *str, unsigned int *s, const char sep) {
 	/*
 	 * memory allocatin for the string array in size of 
 	 * 20 strings with 20 chars.
@@ -25,7 +25,7 @@ char **split(const char *str, unsigned int *s) {
 		 * of the str was not equal to whitespace.
 		 */
 
-        if (str[i] != ' ') {
+        if (str[i] != sep) {
             out[j][k] = str[i];
             k++;
         }
@@ -35,7 +35,7 @@ char **split(const char *str, unsigned int *s) {
 		 * point at the first char, increment the size by 1.
 		 */
 
-        else if (str[i] == ' ') {
+        else if (str[i] == sep) {
             j++;
             k = 0;
             *s += 1;
