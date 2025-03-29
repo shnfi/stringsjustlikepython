@@ -20,4 +20,5 @@ ljust(const char *str, const unsigned int width) // Returns a left justified ver
 rjust(const char *str, const unsigned int width) // Returns a right justified version of the string
 split(const char *str, unsigned int *s) // Splits the string at the specified separator, and returns a list
 startswith(const char *str, const char first_char) // Returns true if the string starts with the specified value
+strip(const char *str) // Returns a trimmed version of the string
 ```
