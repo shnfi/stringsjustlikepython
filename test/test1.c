@@ -57,13 +57,20 @@ int main()
     printf("%s is cool!\n", rjust("banana", 10)); // expected output:       banana is cool!
 
     int size = 0;
-    char **arr2 = split("hello world im shnfi", (unsigned int *) &size);
+    char **arr2 = split("hello world im shnfi", (unsigned int *) &size, ' ');
     for (int i = 0; i < size; i++)
         printf("%s, ", arr2[i]); // expected output: hello, world, im shnfi,
+    printf("\n");
+    size = 0;
+    char **arr3 = split("jake-stop-being-dumb", (unsigned int *) &size, '-');
+    for (int i = 0; i < size; i++)
+        printf("%s, ", arr3[i]); // expected output: hello, world, im shnfi,
     printf("\n");
 
     printf("%d\n", startswith("jake really have to go!", 'j')); // expected output: 1
     printf("%d\n", startswith("alex really have to go!", 'j')); // expected output: 0
+
+    printf("%s\n", strip("   hello world   ")); // expected output: hello world
 
     return 0;
 }
