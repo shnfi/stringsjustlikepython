@@ -28,5 +28,6 @@
 #include "rjust.h"
 #include "split.h"
 #include "startswith.h"
+#include "strip.h"
 
 #endif
