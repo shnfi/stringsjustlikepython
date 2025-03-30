@@ -31,5 +31,7 @@
 #include "strip.h"
 #include "lstrip.h"
 #include "rstrip.h"
+#include "swapcase.h"
+#include "zfill.h"
 
 #endif
