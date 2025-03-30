@@ -72,5 +72,13 @@ int main()
 
     printf("%s\n", strip("   hello world   ")); // expected output: hello world
 
+    printf("%s\n", lstrip("   hello world   ")); // expected output: hello world   
+
+    printf("%s\n", rstrip("   hello world   ")); // expected output:    hello world
+
+    printf("%s\n", swapcase("hEllOw")); // HeLLoW
+
+    printf("%s\n", zfill("shnfi", 5));
+
     return 0;
 }
