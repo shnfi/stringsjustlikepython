@@ -29,5 +29,7 @@
 #include "split.h"
 #include "startswith.h"
 #include "strip.h"
+#include "lstrip.h"
+#include "rstrip.h"
 
 #endif
