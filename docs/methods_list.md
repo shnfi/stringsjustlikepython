@@ -21,4 +21,8 @@ rjust(const char *str, const unsigned int width) // Returns a right justified ve
 split(const char *str, unsigned int *s) // Splits the string at the specified separator, and returns a list
 startswith(const char *str, const char first_char) // Returns true if the string starts with the specified value
 strip(const char *str) // Returns a trimmed version of the string
+lstrip(const char *str) // Returns a left trim version of the string
+rstrip(const char *str) // Returns a right trim version of the string
+swapcase(const char *str) // Swaps cases, lower case becomes upper case and vice versa
+zfill(const char *str, const unsigned int count) // Fills the string with a specified number of 0 values at the beginning
 ```
