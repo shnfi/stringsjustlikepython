@@ -22,3 +22,6 @@
 <p>[21] [NEW_METHOD] - update methods list</p>
 <p>[22] [NEW_METHOD] - added lstrip() method to the lib</p>
 <p>[23] [NEW_METHOD] - added rstrip() method to the lib</p>
+<p>[24] [NEW_METHOD] - added swapcase() method to the lib</p>
+<p>[25] [NEW_METHOD] - added zfill() method to the lib</p>
+<p>[26] [UPDATE] - update methods list</p>
