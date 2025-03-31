@@ -25,4 +25,5 @@ lstrip(const char *str) // Returns a left trim version of the string
 rstrip(const char *str) // Returns a right trim version of the string
 swapcase(const char *str) // Swaps cases, lower case becomes upper case and vice versa
 zfill(const char *str, const unsigned int count) // Fills the string with a specified number of 0 values at the beginning
+count(const char *str, const char *sub) // Returns the number of times a specified value occurs in a string
 ```
