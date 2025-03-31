@@ -76,9 +76,12 @@ int main()
 
     printf("%s\n", rstrip("   hello world   ")); // expected output:    hello world
 
-    printf("%s\n", swapcase("hEllOw")); // HeLLoW
+    printf("%s\n", swapcase("hEllOw")); // expected output: HeLLoW
 
     printf("%s\n", zfill("shnfi", 5));
+
+    printf("%d\n", count("hello, im shnfi, my name is shnfi", "shnfi")); // expected output: 2
+    printf("%d\n", count("hello, im shnfi, my name is shnfi, shnfi is cool, shnfi is a nickname", "shnfi")); // expected output: 4
 
     return 0;
 }
