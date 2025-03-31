@@ -10,6 +10,12 @@ char *zfill(const char *str, const unsigned int count) {
     int j = 0;
 
     for (int i = 0; i < TOTAL_LEN; i++) {
+        /*
+         * if i is still smaller that the count, start
+         * appending zeros, otherwise append the ith char 
+         * of the str.
+         */
+
         if (i < count)
             out[i] = '0';
         else {
