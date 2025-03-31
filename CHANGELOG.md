@@ -25,3 +25,5 @@
 <p>[24] [NEW_METHOD] - added swapcase() method to the lib</p>
 <p>[25] [NEW_METHOD] - added zfill() method to the lib</p>
 <p>[26] [UPDATE] - update methods list</p>
+<p>[27] [MODIFICATION] - added comments to the zfill() method</p>
+<p>[28] [NEW_METHOD] - added count() method to the lib</p>
