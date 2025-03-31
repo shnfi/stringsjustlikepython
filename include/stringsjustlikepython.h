@@ -33,5 +33,6 @@
 #include "rstrip.h"
 #include "swapcase.h"
 #include "zfill.h"
+#include "count.h"
 
 #endif
