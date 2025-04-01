@@ -5,7 +5,7 @@ length(const char *str) // Returns the length of the stirng
 lower(const char *str) // Converts string into lower case
 center(const char *str, const unsigned int width) // Returns a centered string
 endswith(const char *str, const char last_char) // Returns true if the string ends with the specified value
-find(const char *str, const char char_) // Searches the string for a specified value and returns the position of where it was found
+find(const char *str, const char *sub) // Searches the string for a specified value and returns the position of where it was found
 isalpha(const char *str) // Returns True if all characters in the string are in the alphabet
 isdecimal(const char *str) // Returns True if all characters in the string are decimals
 isidentifier(const char *str) // Returns True if the string is an identifier
@@ -26,4 +26,5 @@ rstrip(const char *str) // Returns a right trim version of the string
 swapcase(const char *str) // Swaps cases, lower case becomes upper case and vice versa
 zfill(const char *str, const unsigned int count) // Fills the string with a specified number of 0 values at the beginning
 count(const char *str, const char *sub) // Returns the number of times a specified value occurs in a string
+replace(const char *str, const char *s1, const char *s2) // Returns a string where a specified value is replaced with a specified value
 ```
