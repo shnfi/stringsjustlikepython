@@ -35,5 +35,7 @@
 #include "zfill.h"
 #include "count.h"
 #include "replace.h"
+#include "title.h"
+#include "rfind.h"
 
 #endif
