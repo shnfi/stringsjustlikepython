@@ -27,4 +27,6 @@ swapcase(const char *str) // Swaps cases, lower case becomes upper case and vice
 zfill(const char *str, const unsigned int count) // Fills the string with a specified number of 0 values at the beginning
 count(const char *str, const char *sub) // Returns the number of times a specified value occurs in a string
 replace(const char *str, const char *s1, const char *s2) // Returns a string where a specified value is replaced with a specified value
+title(const char *str) // Converts the first character of each word to upper case
+rfind(const char *str, const char *sub) // Searches the string for a specified value and returns the last position of where it was found
 ```
