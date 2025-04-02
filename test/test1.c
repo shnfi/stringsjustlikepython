@@ -89,5 +89,11 @@ int main()
     printf("%s\n", replace("hello alexander, nice to meet you!", "alexander", "shnfi")); // expected output: hello shnfi, nice to meet you!
     printf("%s\n", replace("hello ali, nice to meet you!", "ali", "shnfi")); // expected output: hello shnfi, nice to meet you!
 
+    printf("%s\n", title("shnfi")); // expected output: Shnfi
+    printf("%s\n", title("ray")); // expected output: Ray
+
+    printf("%d\n", find("hello mr, i love you mr!", "mr")); // expected output: 6
+    printf("%d\n", rfind("hello mr, i love you mr!", "mr")); // expected output: 21
+
     return 0;
 }
