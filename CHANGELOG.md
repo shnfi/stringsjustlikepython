@@ -29,3 +29,6 @@
 <p>[28] [NEW_METHOD] - added count() method to the lib</p>
 <p>[29] [MODIFICATION] - enabled find() method to find both strings and chars</p>
 <p>[30] [NEW_METHOD] - added replace() method to the lib</p>
+<p>[31] [NEW_METHOD] - added title() method to the lib</p>
+<p>[32] [NEW_METHOD] - added rfind() method to the lib</p>
+<p>[33] [UPDATE] - update methods list</p>
