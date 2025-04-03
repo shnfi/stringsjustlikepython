@@ -17,9 +17,9 @@ int main()
     printf("%d\n", endswith("hello, i really love apples", 's')); // expected output: 1
     printf("%d\n", endswith("hello, i really love apple", 's')); // expected output: 0
 
-    printf("* %d\n", find("hello, im shnfi!", "im")); // expected output: 1
-    printf("* %d\n", find("hello, im shnfi!", "s")); // expected output: 1
-    printf("* %d\n", find("hello, im shnfi!", "jacob")); // expected output: 0
+    printf("%d\n", find("hello, im shnfi!", "im")); // expected output: 1
+    printf("%d\n", find("hello, im shnfi!", "s")); // expected output: 1
+    printf("%d\n", find("hello, im shnfi!", "jacob")); // expected output: 0
 
     printf("%d\n", isallpha("aajfjkd0")); // expected output: 0
 
