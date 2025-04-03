@@ -32,3 +32,4 @@
 <p>[31] [NEW_METHOD] - added title() method to the lib</p>
 <p>[32] [NEW_METHOD] - added rfind() method to the lib</p>
 <p>[33] [UPDATE] - update methods list</p>
+<p>[34] [NEW_FEATURE] - added man page for each command</p>
