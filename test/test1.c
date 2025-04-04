@@ -88,6 +88,8 @@ int main()
     printf("%s\n", replace("hello jacob, nice to meet you!", "jacob", "shnfi")); // expected output: hello shnfi, nice to meet you!
     printf("%s\n", replace("hello alexander, nice to meet you!", "alexander", "shnfi")); // expected output: hello shnfi, nice to meet you!
     printf("%s\n", replace("hello ali, nice to meet you!", "ali", "shnfi")); // expected output: hello shnfi, nice to meet you!
+    printf("%s\n", replace("hello mr jackson, nice to meet you!", "mr jackson", "shnfi")); // expected output: hello shnfi, nice to meet you!
+    printf("%s\n", replace("hello world", "hello", "bye")); // expected output: bye world
 
     printf("%s\n", title("shnfi")); // expected output: Shnfi
     printf("%s\n", title("ray")); // expected output: Ray
