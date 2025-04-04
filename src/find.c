@@ -11,8 +11,12 @@ int find(const char *str, const char *sub)
     for (int i = 0; i < length(str); i++) {
         if (str[i] == sub[j]) {
             j++;
-            if (str[i - 1] == ' ')
-                si = i;
+            if (str[i] == sub[0]) {
+                if (i == 0)
+                    si = i;
+                else if (str[i - 1] == ' ')
+                    si = i;
+            }
         }
         else {
             j = 0;
