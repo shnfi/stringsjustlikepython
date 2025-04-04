@@ -33,3 +33,4 @@
 <p>[32] [NEW_METHOD] - added rfind() method to the lib</p>
 <p>[33] [UPDATE] - update methods list</p>
 <p>[34] [NEW_FEATURE] - added man page for each command</p>
+<p>[35] [BUG_FIXED] - fixed the bug related to starting index identification</p>
