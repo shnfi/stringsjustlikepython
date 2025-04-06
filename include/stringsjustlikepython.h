@@ -37,5 +37,6 @@
 #include "replace.h"
 #include "title.h"
 #include "rfind.h"
+#include "reverse.h"
 
 #endif
