@@ -13,7 +13,7 @@ char *ljust(const char *str, const unsigned int width) {
      */
 
     if (length(str) > width)
-        err_("Syntax", "The length of given str must be less or equal to the given width!");
+        return str;
 
     /*
      * navigating the whole 'out' variable from left to right,
