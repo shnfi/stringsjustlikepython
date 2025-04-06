@@ -29,4 +29,5 @@ count(const char *str, const char *sub) // Returns the number of times a specifi
 replace(const char *str, const char *s1, const char *s2) // Returns a string where a specified value is replaced with a specified value
 title(const char *str) // Converts the first character of each word to upper case
 rfind(const char *str, const char *sub) // Searches the string for a specified value and returns the last position of where it was found
+reverse(const char *str) // Returns a reverse version of the string
 ```
