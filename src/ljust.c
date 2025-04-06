@@ -13,7 +13,7 @@ char *ljust(const char *str, const unsigned int width) {
      */
 
     if (length(str) > width)
-        return str;
+        return (char *) str;
 
     /*
      * navigating the whole 'out' variable from left to right,

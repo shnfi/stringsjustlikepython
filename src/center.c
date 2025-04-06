@@ -13,7 +13,7 @@ char *center(const char *str, const unsigned int width) {
      */
 
     if (length(str) > width)
-        return str;
+        return (char *) str;
 
     unsigned int corner_spaces = width - length(str); // finding out how many spaces should be in the right and left of the str.
     unsigned int single_side_spaces = corner_spaces / 2; // finding out how many spaces should be in each side of the str.
