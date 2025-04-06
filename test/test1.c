@@ -97,5 +97,8 @@ int main()
     printf("%d\n", find("hello mr, i love you mr!", "mr")); // expected output: 6
     printf("%d\n", rfind("hello mr, i love you mr!", "mr")); // expected output: 21
 
+    printf("%s\n", reverse("hello")); // expected output: olleh
+    printf("%s\n", reverse("shnfi")); // expected output: ifnhs
+
     return 0;
 }
