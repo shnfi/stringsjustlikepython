@@ -35,3 +35,5 @@
 <p>[34] [NEW_FEATURE] - added man page for each command</p>
 <p>[35] [BUG_FIXED] - fixed the bug related to starting index identification</p>
 <p>[36] [NEW_FEATURE] - new example program using 'center()' method</p>
+<p>[37] [MODIFICATION] - changed the 'center' method's response to the invalid argumen</p>
+<p>[38] [MODIFICATION] - changed the 'ljust' method's response to the invalid argumen</p>
