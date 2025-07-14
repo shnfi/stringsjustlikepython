@@ -37,3 +37,7 @@
 <p>[36] [NEW_FEATURE] - new example program using 'center()' method</p>
 <p>[37] [MODIFICATION] - changed the 'center' method's response to the invalid argumen</p>
 <p>[38] [MODIFICATION] - changed the 'ljust' method's response to the invalid argumen</p>
+<p>[39] [BUG_FIXED] - removed a warning in 'center()' method</p>
+<p>[40] [BUG_FIXED] - removed a warning in 'ljust()' method</p>
+<p>[41] [NEW_METHOD] - added reverse() method to the lib</p>
+<p>[42] [UPDATE] - update methods list</p>
